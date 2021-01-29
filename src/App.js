@@ -6,8 +6,7 @@ import MapboxGeocoder from "@mapbox/mapbox-gl-geocoder";
 import "@mapbox/mapbox-gl-geocoder/dist/mapbox-gl-geocoder.css";
 import "./App.css";
 
-mapboxgl.accessToken =
-  "pk.eyJ1IjoiYXNkdXRvaXQiLCJhIjoiY2trYXFwNHB3MDJ0azJvb3hyamI5YXcwOCJ9.5nhR3J-WZnzZzWoLiE8CBA";
+mapboxgl.accessToken = process.env.REACT_APP_MAPBOX_KEY;
 
 function setupMap(center) {
   const mapId = document.getElementById("map");
